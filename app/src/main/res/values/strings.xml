@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Mighty</string>
+    <string name="card_suit">CARD Suit</string>
+    <string name="card_value">CARD Value</string>
+    <string-array name="card_suit_set">
+        <item>Spade</item>
+        <item>Diamond</item>
+        <item>Heart</item>
+        <item>Club</item>
+        <item>NT</item>
+    </string-array>
+    <string-array name="card_value_set">
+        <item>A</item>
+        <item>K</item>
+        <item>Q</item>
+        <item>J</item>
+        <item>T</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="card_bid_value_set">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>T</item>
+    </string-array>
+</resources>

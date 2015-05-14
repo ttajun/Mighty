@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/mainframe">
+
+    <com.ttajun.mighty.GameView
+        android:id="@+id/MightySurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+    </com.ttajun.mighty.GameView>
+
+    <SlidingDrawer android:layout_height="120dp"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        android:id="@+id/slide"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/handle"
+            android:src="@drawable/spade"
+            />
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/content"
+            android:background="#C0C0C0"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RadioGroup android:id="@+id/QueGroup1" android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal" android:gravity="center">
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="5" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/option3" android:text="6" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/option4" android:text="7" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/option5" android:text="8" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/option6" android:text="9" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/option7" android:text="10" android:textSize="12dip"/>
+            </RadioGroup>
+            <RadioGroup android:id="@+id/QueGroup2" android:layout_width="fill_parent" android:layout_height="40dip" android:orientation="horizontal" android:gravity="center">
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/suit_option1" android:text="♣" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/suit_option2" android:text="♦" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/suit_option3" android:text="♥" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/suit_option4" android:text="♠" android:textSize="12dip"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:checked="false" android:id="@+id/suit_option5" android:text="NT" android:textSize="12dip"/>
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/bottom_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+                <Button android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PASS"
+                    android:textSize="12dip"
+                    android:onClick="myClickHandler"
+                    />
+                <Button android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BID"
+                    android:textSize="12dip"
+                    android:onClick="myClickHandler"
+                    />
+                <Button android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FRIEND"
+                    android:textSize="12dip"
+                    android:onClick="myClickHandler"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+</FrameLayout>
